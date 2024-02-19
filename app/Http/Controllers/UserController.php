@@ -21,10 +21,7 @@ class UserController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
-        return view('users.create');
-    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -35,18 +32,18 @@ class UserController extends Controller
         $user->name = $request->name;
         $user->lastname = $request->lastname;
         $user->email = $request->email;
+        $user->phone = $request->phone;
         $user->password = $request->password;
         $user->save();
-        return redirect()->route('users.show', $user);
+        return redirect()->route('users.index', $user);
     }
 
     /**
      * Display the specified resource.
      */
-    public function show($id)
+    public function show(User $user)
     {
-        $users = User::findOrFail($id);
-        return $users;
+        return view('users.show', compact('user'));
     }
 
     /**

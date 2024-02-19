@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NavController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -14,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('', function () {
+    return view('index');
 });
 
-
+Route::resource('nav', NavController::class);
 
 Route::resource('users', UserController::class);
