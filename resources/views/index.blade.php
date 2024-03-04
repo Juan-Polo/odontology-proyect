@@ -10,19 +10,20 @@
 
 
 
-        <div id="carouselExampleCaptions" class="carousel slide" style=" background-color: rgb(0, 0, 0); ">
+        <div id="carouselExampleCaptions" class="carousel slide border-5 border-dark  border-bottom "
+            style=" background-color: rgb(0, 0, 0); ">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                <button type="button" style="background-color: #000000;" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" style="background-color: #4d4d4d;" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" style="background-color: #4d4d4d;" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="  https://img.freepik.com/foto-gratis/doctor-sosteniendo-herramientas-dentista_144627-43914.jpg?w=1800&t=st=1708187937~exp=1708188537~hmac=53ee92f09d23f0fc77d1562d7fe600d8574f48089a01e0c47bd8e2366532fe7d"
-                        class="d-block w-100" alt="..." style=" height:1000px; opacity:0.7">
+                    <img src="{{ asset('/img/c1.jpg') }}" class="d-block w-100" alt="..."
+                        style=" height:1000px; opacity:0.9">
                     <div class="carousel-caption d-none
                         d-md-block">
 
@@ -30,20 +31,20 @@
                 </div>
                 <div class="carousel-item">
                     <img src=" {{ asset('/img/odo1.jpg') }} " class="d-block w-100" alt="... "
-                        style=" height:1000px; opacity:0.7">
+                        style=" height:1000px; opacity:0.9">
                     <div class="carousel-caption d-none d-md-block">
 
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="https://img.freepik.com/foto-gratis/hermosa-chica-sentada-oficina-dentista_1157-21014.jpg?w=1380&t=st=1708188114~exp=1708188714~hmac=171536221d45d9caf53ea44f7c684c9ea0c8cdb077cc65c16860ecf3b6368666"
-                        class="d-block w-100" alt="..." style=" height:1000px; opacity:0.7">
+                    <img src=" {{ asset('/img/c3.jpg') }}  " class="d-block w-100" alt="..."
+                        style=" height:1000px; opacity:0.9">
                     <div class="carousel-caption d-none d-md-block">
 
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            <button class="carousel-control-prev  " type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -128,9 +129,7 @@
                     la calidad de vida de nuestra comunidad.</p>
             </div>
             <div class="col-xl-6 d-flex justify-content-center" style="background-color: rgba(0, 60, 255, 0)"> <img
-                    style="width: 700px"
-                    src="https://img.freepik.com/foto-gratis/foto-dentista-sonriente-pie-brazos-cruzados-su-colega-mostrando-signo-bien_496169-1043.jpg?w=1380&t=st=1708186312~exp=1708186912~hmac=8f8cda0c55ae9eb83e65201cc80cbdfc82bc472fdc04b5c5e9c3d9c564b6f621"
-                    alt=""> </div>
+                    style="width: 700px" src=" {{ asset('/img/b1.jpg') }} " alt=""> </div>
 
 
         </div>
@@ -140,8 +139,7 @@
 
 
 
-            <div class="col-xl-6 d-flex justify-content-center"> <img style="width: 700px"
-                    src="https://img.freepik.com/foto-gratis/retrato-joven-dentista-sonriente-parada-junto-adolescente-clinica_662251-2519.jpg?w=1380&t=st=1708186366~exp=1708186966~hmac=c3980233910f049c404b15ba38fab3602e7af9250e77ee41d7cf4e96db314e73"
+            <div class="col-xl-6 d-flex justify-content-center"> <img style="width: 700px" src="{{ asset('/img/b2.jpg') }}"
                     alt=""></div>
 
             <div class="col-xl-6 text-center p-5" style="background-color: rgba(0, 255, 255, 0)">
